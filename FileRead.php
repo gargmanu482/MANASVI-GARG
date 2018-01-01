@@ -1,0 +1,9 @@
+<?php
+$file='https://github.com/gargmanu482/MANU/blob/master/MANASVI%20GARG%20(1).pdf';
+$filename='AdmissionFormProcedure.pdf';
+header('Content-type:appication/pdf');
+header('Content-Disposition:inline;filename="'.$filename.'"');
+header('Content-Transfer-Encoding:binary');
+header('Accept-Ranges:bytes');
+@readfile($file);
+?>
